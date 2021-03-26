@@ -1,0 +1,35 @@
+<script>
+
+    const MIN_WIDTH = 60
+    const MAX_WIDTH = 3000
+
+    let break_Point_3 = 560
+    let break_Point_2 = 980
+    let break_Point_1 = 1200
+
+    let windowWidth = innerWidth
+
+    //              560               980                 1200
+    //-------------- x --------------- x ------------------ x ------------------> window size
+    //      xs                s                 m                     l
+
+    // min-width = 60
+    // max-width = 3000
+
+    if ( windowWidth >= MAX_WIDTH ) {
+        alert( "ERROR" )
+    } else if( windowWidth >= break_Point_1 ) {
+        alert( "Large: " + windowWidth )
+    } else if (windowWidth >= break_Point_2) {
+        alert("Medium: " + windowWidth)
+    } else if (windowWidth >= break_Point_3) {
+        alert("Small: " + windowWidth)
+    } else if (windowWidth >= MIN_WIDTH) {
+        alert("Extra Small: " + windowWidth)
+    } else {
+        alert( "ERROR" )
+    }
+
+    
+
+</script>
